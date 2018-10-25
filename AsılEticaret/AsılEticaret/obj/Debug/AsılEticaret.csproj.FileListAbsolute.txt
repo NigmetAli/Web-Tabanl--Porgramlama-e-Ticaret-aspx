@@ -1,0 +1,5 @@
+c:\users\piçaaak\documents\visual studio 2012\Projects\AsılEticaret\AsılEticaret\bin\AsılEticaret.dll
+c:\users\piçaaak\documents\visual studio 2012\Projects\AsılEticaret\AsılEticaret\bin\AsılEticaret.pdb
+c:\users\piçaaak\documents\visual studio 2012\Projects\AsılEticaret\AsılEticaret\obj\Debug\AsılEticaret.csprojResolveAssemblyReference.cache
+c:\users\piçaaak\documents\visual studio 2012\Projects\AsılEticaret\AsılEticaret\obj\Debug\AsılEticaret.dll
+c:\users\piçaaak\documents\visual studio 2012\Projects\AsılEticaret\AsılEticaret\obj\Debug\AsılEticaret.pdb

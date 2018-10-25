@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="AsılEticaret.admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    
+     <title></title>
+    <script src="../jquery.min.js"></script>
+    <link href="../StyleSheet1.css" rel="stylesheet" />
+    <script src="jquery.min.js"></script>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="../kullanici/css/ie.css" rel="stylesheet" />
+    <link href="../kullanici/css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery(".buyuk-tab-baslik li:first a").addClass("aktif");
+            jQuery(".buyuk-tab-baslik li a").click(function () {
+                var intIndeks = jQuery(this).parent().index();
+                jQuery(".buyuk-tab-baslik li a").removeClass("aktif");
+                jQuery(this).addClass("aktif");
+                jQuery(".buyuk-tab-icerik li").css({ "display": "none" });
+                jQuery(".buyuk-tab-icerik li:eq(" + intIndeks + ")").css({ "display": "block" });
+            });
+        });
+    </script>
+
+    <style type="text/css">
+
+        .aramabolumu {
+            width:100%;
+            height:25px;
+            
+        }
+            .aramabolumu .kutu {
+                margin-right:5px;
+                width:50%;
+                height:40px;
+                float:left;
+                
+            }
+            .aramabolumu .dugme {
+                margin-left:5px;
+                width:30%;
+                float:left;
+                height:40px;
+               
+
+            }
+        .listele {
+            float:left;
+            width:100%;
+           
+            
+            margin-top:30px;
+
+        }
+
+        .labeltextbox {
+            float:left;
+            height:50px;
+           
+            width:550px;
+            font-family:Georgia;
+            
+            
+        }
+            .labeltextbox .label {
+                float:left;
+                height:40px;
+               
+                width:230px;                
+                font-size:20px;
+            
+            }
+            .labeltextbox .textbox {
+                float:left;
+                height:40px;
+                
+                width:270px;
+               
+                
+            
+            }
+
+        .ustsol {         
+               
+               margin-bottom:10px;
+        }
+            .ustsol .unsagi {
+                float:right;
+            }
+        </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <style type="text/css">
+        
+            .adminkaydetguncellebuton {
+              display: inline-block;
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+              cursor: pointer;
+              padding: 10px 20px;
+              border: 1px solid #018dc4;
+              -webkit-border-radius: 20px;
+              border-radius: 20px;
+              font: normal 16px/normal Georgia, serif;
+              color: rgba(255,255,255,0.9);
+              -o-text-overflow: clip;
+              text-overflow: clip;
+              background: #296843;
+              -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+              box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+              text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+              -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  
+        }
+       </style>
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="ortalayici">
+        <h1> 
+            <div class="ustsol">
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> 
+
+                <div class="unsagi">
+                    <asp:Button ID="Button1" runat="server" CssClass="adminkaydetguncellebuton" Text="Güvenli Çıkış" Font-Size="10pt" OnClick="Button1_Click1" />
+                </div>
+             </div>
+                      
+        
+        </h1>
+        <ul class="buyuk-tab-baslik">
+                
+                <li><a href="araListele.aspx">Ürün Listele ve Ara</a></li>
+                <li><a href="ekleGuncelle.aspx">Ürün Ekle ve Güncelle</a></li>                
+                <li><a href="adminSil.aspx">Ürün Sil</a></li>
+                
+            </ul>
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+       
+        </asp:ContentPlaceHolder>
+       </div>
+    </div>
+    </form>
+</body>
+</html>

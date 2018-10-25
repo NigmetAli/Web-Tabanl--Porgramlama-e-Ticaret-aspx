@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D7CF3DE-4249-44AA-8989-D10C46D62510}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AsılEticaret</RootNamespace>
+    <AssemblyName>AsılEticaret</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\adminSil.aspx" />
+    <Content Include="admin\araListele.aspx" />
+    <Content Include="admin\ekleGuncelle.aspx" />
+    <Content Include="giris\giris.aspx" />
+    <Content Include="giris\giriscss.css" />
+    <Content Include="jquery.min.js" />
+    <Content Include="KayıtOl\kayitcss.css" />
+    <Content Include="KayıtOl\kayitOl.aspx" />
+    <Content Include="kullanici\css\ie.css" />
+    <Content Include="kullanici\css\images\36_36.jpg" />
+    <Content Include="kullanici\css\images\blog.jpg" />
+    <Content Include="kullanici\css\images\favicon.ico" />
+    <Content Include="kullanici\css\images\halısaha.jpg" />
+    <Content Include="kullanici\css\images\hole.png" />
+    <Content Include="kullanici\css\images\intro-button.gif" />
+    <Content Include="kullanici\css\images\intro-post-1.jpg" />
+    <Content Include="kullanici\css\images\intro-post-2.jpg" />
+    <Content Include="kullanici\css\images\intro-post-3.jpg" />
+    <Content Include="kullanici\css\images\intro-slider.jpg" />
+    <Content Include="kullanici\css\images\intro.gif" />
+    <Content Include="kullanici\css\images\li-border.gif" />
+    <Content Include="kullanici\css\images\link-facebook.gif" />
+    <Content Include="kullanici\css\images\link-flickr.gif" />
+    <Content Include="kullanici\css\images\link-linkedin.gif" />
+    <Content Include="kullanici\css\images\link-twitter.gif" />
+    <Content Include="kullanici\css\images\Logo.JPG" />
+    <Content Include="kullanici\css\images\main-button.gif" />
+    <Content Include="kullanici\css\images\navigation-separator.gif" />
+    <Content Include="kullanici\css\images\navigation.gif" />
+    <Content Include="kullanici\css\images\partners.jpg" />
+    <Content Include="kullanici\css\images\search-submit.gif" />
+    <Content Include="kullanici\css\images\slider-navigation-active.gif" />
+    <Content Include="kullanici\css\images\slider-navigation-normal.gif" />
+    <Content Include="kullanici\css\images\transparent-70.png" />
+    <Content Include="kullanici\css\images\ul-arrow.gif" />
+    <Content Include="kullanici\css\images\welcome.jpg" />
+    <Content Include="kullanici\css\style.css" />
+    <Content Include="kullanici\js\cufon-yui.js" />
+    <Content Include="kullanici\js\jquery-1.4.2.min.js" />
+    <Content Include="kullanici\js\jquery-func.js" />
+    <Content Include="kullanici\js\jquery.jcarousel.js" />
+    <Content Include="kullanici\js\MyriadPro.font.js" />
+    <Content Include="kullanici\kullaniciSayfa.aspx" />
+    <Content Include="Resimler\ewtg_urunresim_4.jpg" />
+    <Content Include="sepetim\satinAl.aspx" />
+    <Content Include="sepetim\sepetim.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="urundetay\urunDetay.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminSil.aspx.cs">
+      <DependentUpon>adminSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminSil.aspx.designer.cs">
+      <DependentUpon>adminSil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\araListele.aspx.cs">
+      <DependentUpon>araListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\araListele.aspx.designer.cs">
+      <DependentUpon>araListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ekleGuncelle.aspx.cs">
+      <DependentUpon>ekleGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ekleGuncelle.aspx.designer.cs">
+      <DependentUpon>ekleGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giris\giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris\giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KayıtOl\kayitOl.aspx.cs">
+      <DependentUpon>kayitOl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KayıtOl\kayitOl.aspx.designer.cs">
+      <DependentUpon>kayitOl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanici\kullaniciSayfa.aspx.cs">
+      <DependentUpon>kullaniciSayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanici\kullaniciSayfa.aspx.designer.cs">
+      <DependentUpon>kullaniciSayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sepetim\satinAl.aspx.cs">
+      <DependentUpon>satinAl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sepetim\satinAl.aspx.designer.cs">
+      <DependentUpon>satinAl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sepetim\sepetim.aspx.cs">
+      <DependentUpon>sepetim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sepetim\sepetim.aspx.designer.cs">
+      <DependentUpon>sepetim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="urundetay\urunDetay.aspx.cs">
+      <DependentUpon>urunDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="urundetay\urunDetay.aspx.designer.cs">
+      <DependentUpon>urunDetay.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master.Master" />
+    <Content Include="admin\AdminMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5616/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

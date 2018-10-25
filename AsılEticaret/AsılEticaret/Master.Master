@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AsılEticaret.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">  
+     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />  
+    <title>NM TECNOLOGIES</title>
+    <link href="css/ie.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />  
+    
+    <link href="kullanici/css/style.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+
+    <script type="text/javascript" src="/kullanici/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/kullanici/js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="kullanici/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="kullanici/js/jquery.jcarousel.js"></script>
+
+    
+    <script type="text/javascript" src="/kullanici/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="/kullanici/js/MyriadPro.font.js"></script>
+    <script type="text/javascript" src="kullanici/js/jquery-func.js"></script><!--slider kaydırıcı-->
+   
+    <script type="text/javascript" src="/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="/js/MyriadPro.font.js"></script>
+   <script type="text/javascript" src="/js/jquery-func.js"></script>
+
+   
+    <script language="javascript" src="http://is.sitekodlari.com/yukaricik8.js"></script>
+
+
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 582px;
+            
+        }
+            .kulcik {
+              display: inline-block;
+              -webkit-box-sizing: content-box;
+              -moz-box-sizing: content-box;
+              box-sizing: content-box;
+              cursor: pointer;
+              padding: 10px 20px;
+              border: 1px solid #018dc4;
+              -webkit-border-radius: 20px;
+              border-radius: 20px;
+              font: normal 16px/normal Georgia, serif;
+              color: rgba(255,255,255,0.9);
+              -o-text-overflow: clip;
+              text-overflow: clip;
+              background: #296843;
+              -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+              box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+              text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+              -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+              transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  
+        }
+      
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server" >
+        <div id="header">
+        <div class="shell">
+            <!-- Logo -->
+            <h1 id="logo"><a href="/kullanici/kullaniciSayfa.aspx">NM TECNOLOGIES</a></h1>
+
+            <!-- /Logo -->
+            <div class="sepet">
+                <asp:Button ID="guvenliCikis" CssClass="kulcik" runat="server" OnClick="guvenliCikis_Click"  Text="Güvenli Çıkış"  />
+                <asp:LinkButton ID="linksepet" ForeColor="Green" runat="server" OnClick="linksepet_Click" Height="25px" Font-Size="Medium">Sepetim</asp:LinkButton>
+            </div>
+
+            <!-- sosyal bağlantılar -->
+            
+            
+            
+            <!-- /sosyal bağlantılar -->
+        </div>
+    </div>
+        <div id="navigation">           
+            <div class="shell">		
+		<ul>
+			<li><a href="http://localhost:5616/kullanici/kullaniciSayfa.aspx">Anasayfa</a></li>            
+			<li><a href="#">Hakkımızda</a></li>			
+			<li><a href="#">Bize Ulaşın</a></li>
+		</ul>
+
+        <div class="girisadi">
+            <asp:Label ID="girisadi" runat="server" Text="Label"></asp:Label>
+
+        </div>
+		
+		<div class="cl">&nbsp;</div>
+	</div>
+</div>
+<!-- /Menu Bitişi -->
+
+<!-- Slider-->
+<div id="intro">
+	<div class="shell">
+		
+		<div class="slider-holder">
+			<ul>
+				<!-- Slider resimleri -->
+				<li>
+					<div class="post-image">
+                        <img src="/kullanici/css/images/Logo.JPG" alt="Alternate Text" />
+					</div>				
+					<div class="post-data">
+						<h2></h2>
+						
+						
+					</div>	
+				</li>
+				<!-- /1. slider resmi sonu-->
+				
+				<!-- 2 . slider başlangıcı -->
+				<li>
+					<div class="post-image">
+						<img src="/kullanici/css/images/intro-post-2.jpg" alt="" />
+					</div>				
+					<div class="post-data">
+						<h2>Slider Yazısı</h2>
+						
+					</div>	
+				</li>
+				<!-- /2. slider sonu -->
+				
+				
+			</ul>
+			
+			
+			<div class="slider-frame">&nbsp;</div>
+			
+		</div>
+		
+		
+		<!-- Slider Sayısı ayarlama link yeri -->
+		<div class="slider-navigation">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				
+			</ul>
+		</div>
+		
+		<!-- /Slider Sayısı ayarlama link yer sonu-->
+	</div>
+</div>
+
+
+   <!--Slider altındaki bölüm-->
+ 
+
+    <div class="arama">
+       
+               
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2"><asp:TextBox  CssClass="textbox" ID="TextBox1" placeholder="Marka veya model ara"  runat="server" Width="350px" ></asp:TextBox></td>
+                    
+                <td><asp:Button ID="UrunAra" runat="server" OnClick="UrunAra_Click" CssClass="myButton" Text="ARA" /></td>
+            </tr>
+        </table>
+       
+               
+    </div>
+
+    
+        <!--içerik bölümü-->
+
+    
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+    
+
+        <!--içerik bölümü-->
+
+
+         <!--Slider altındaki bölüm bitişi-->
+   
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+
+		<!-- Copyrights --> 
+		<p class="right"> 
+			Tüm hakları Niğmet Ali Koca ve Ubeydullah Musab Güneri'ye aittir.|
+			 <a href="https://www.facebook.com">wwww.msbgnr.com</a> 
+		</p> 
+		<!-- /Copyrights sonu--> 
+		
+		<div class="cl">&nbsp;</div> 
+	</div>
+</div>
+<!-- /Footer sonu-->
+<script type="text/javascript" charset="utf-8">
+    Cufon.now();
+</script>
+    </form>
+</body>
+</html>
